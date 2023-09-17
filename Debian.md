@@ -10,7 +10,7 @@ Alguns dados:
 
 Primeiros softwares instalados:
 
-* GCC 12
+* GCC 12.2
 ```sh
 root@$ apt install gcc
 ```
@@ -20,7 +20,17 @@ root@$ apt install gcc
 root@$ apt install make
 ```
 
-* Curl 7
+* CMake 3.25.1
+```sh
+root@$: apt install cmake
+```
+
+* Ninja Build 1.11.1
+```sh
+root@$ apt install ninja-build
+```
+
+* Curl 7.88.1
 ```sh
 root@$ apt install curl
 ```
@@ -54,3 +64,17 @@ $ make all doc info
 
 root@$ make install install-doc install-html install-info
 ```
+
+* Neovim 0.9 - à partir do código fonte
+```sh
+# Baixa código fonte
+$ git clone https://github.com/neovim/neovim
+$ cd neovim
+$ git checkout release-0.9
+
+# Compila código
+$ make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr
+root@$ make install
+```
+  - Minhas configurações do Neovim: https://github.com/erlimar/astronvim_config
+
