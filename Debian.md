@@ -46,7 +46,30 @@ root@$ apt install dh-autoreconf \
   asciidoc \
   xmlto \
   docbook2x \
-  install-info
+  install-info \
+  wl-clipboard \
+  ripgrep \
+  gdu
+```
+
+* Lazygit 0.40.2
+```sh
+# Baixa binários
+$ curl -LO https://github.com/jesseduffield/lazygit/releases/download/v0.40.2/lazygit_0.40.2_Linux_x86_64.tar.gz
+tar -xzf lazygit_0.40.2_Linux_x86_64.tar.gz
+
+# Instala binários
+root@$ install lazygit /usr/local/bin
+```
+  - https://github.com/jesseduffield/lazygit
+
+* Bottom 0.9.6
+```sh
+# Baixa binários
+$ curl -LO https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_amd64.deb
+
+# Instala binários
+root@$ dpkg -i bottom_0.9.6_amd64.deb
 ```
 
 * Git 2.42 - à partir do código fonte
@@ -77,4 +100,11 @@ $ make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr
 root@$ make install
 ```
   - Minhas configurações do Neovim: https://github.com/erlimar/astronvim_config
+
+* Fantasque Sans Mono Nerd Fonts
+  - https://www.nerdfonts.com
+  - https://github.com/belluzj/fantasque-sans
+
+* Oh My Bash
+  - https://github.com/ohmybash/oh-my-bash
 
